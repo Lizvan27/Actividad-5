@@ -1,0 +1,35 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <div class="card-title text-center">
+            <h5>Calculadora Basica</h5>
+        </div>
+    </div>
+    <div class="card-body text-center  mt-5">
+        <div class="col-md-12 col-12">
+            <input type="number" placeholder="Ingrese numero" ngModel="n1">        
+        </div>
+        <div class="col-md-12 col-12">
+            <input type="number" placeholder="Ingrese numero" ngModel="n2">      
+        </div>
+        <div class="col-md-12 col-12">
+            <span> {{ resultado }} </span>        
+        </div>
+        <!---Accion de Operaciones con funciones-->
+        <div class="">
+
+            <button (click)="sumar()"  class="btn btn-primary bmd-btn-fab bmd-btn-fab-sm">
+                +
+            </button> 
+            <button (click)="restar() "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+                -
+            </button>
+            <button (click)="multiplicar() "  class="btn btn-primary bmd-btn-fab bmd-btn-fab-sm">
+                x
+            </button>
+            <button (click)="dividir() "  class="btn btn-danger bmd-btn-fab bmd-btn-fab-sm">
+                /
+            </button>
+
+        </div>
+    </div>
+</div>
